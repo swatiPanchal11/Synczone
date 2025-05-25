@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#1E1E1E"
+    android:gravity="center"
+    tools:context=".common.UserProfileActivity">
+
+        <!-- Profile Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:background="#2A2A2A"
+                    android:gravity="center">
+
+                        <!-- Profile Image -->
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imageProfile"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:layout_marginBottom="12dp"
+                            android:src="@drawable/default_profile"/>
+
+                        <!-- Username -->
+                        <TextView
+                            android:id="@+id/textUsername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Username"
+                            android:textColor="@android:color/white"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:padding="6dp"
+                            android:textAlignment="center"/>
+
+                        <!-- Followers & Following Count -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="6dp">
+
+                                <TextView
+                                    android:id="@+id/textFollowersCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:text="Followers: 0"
+                                    android:textSize="16sp"
+                                    android:padding="8dp"/>
+
+                                <TextView
+                                    android:id="@+id/textFollowingCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:text="Following: 0"
+                                    android:textSize="16sp"
+                                    android:padding="8dp"/>
+                        </LinearLayout>
+
+                        <!-- Buttons Container -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp">
+
+                                <!-- Follow Button -->
+                                <Button
+                                    android:id="@+id/buttonFollow"
+                                    android:layout_width="0dp"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:text="Follow"
+                                    android:textSize="16sp"
+                                    android:textColor="@android:color/white"
+                                    android:backgroundTint="#5865F2"
+                                    android:layout_marginEnd="8dp"
+                                    android:elevation="4dp"/>
+
+                                <!-- Message Button -->
+                                <Button
+                                    android:id="@+id/buttonMessage"
+                                    android:layout_width="0dp"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:text="Message"
+                                    android:textSize="16sp"
+                                    android:textColor="@android:color/white"
+                                    android:backgroundTint="#404EED"
+                                    android:elevation="4dp"/>
+                        </LinearLayout>
+
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E"
+    tools:context=".common.UserListActivity">
+
+    <EditText
+    android:id="@+id/searchInput"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Search username..."
+    android:padding="12dp"
+    android:textColor="#FFFFFF"
+    android:textColorHint="#AAAAAA"
+    android:background="@drawable/rounded_edittext_bg"
+    android:drawableLeft="@android:drawable/ic_menu_search"
+    android:drawablePadding="10dp"
+    android:elevation="4dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewUsers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:padding="8dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>

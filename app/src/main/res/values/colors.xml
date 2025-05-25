@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#808080</color>
+    <color name="green">#00ff00</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="bottom_nav_icon_color">#FFFFFF</color> <!-- White Icons -->
+    <color name="bottom_nav_text_color">#B0B0B0</color> <!-- Light Grey Text -->
+    <color name="dark_grey">#A9A9A9</color>
+    <color name="red">#FF2C2C</color>
+    <color name="blue">#0000FF</color>
+    <color name="dialogBackground">#2C2F33</color>
+    <color name="inputBackground">#23272A</color>
+    <color name="inputBorder">#99AAB5</color>
+    <color name="buttonNormal">#5865F2</color>
+    <color name="buttonPressed">#4752C4</color>
+    <color name="fabColor">#5865F2</color>
+    <color name="roleBadgeColor">#43B581</color>
+
+    <color name="memberCardBackground">#2C2F33</color>
+
+    <!-- Discord-inspired colors -->
+        <color name="primary">#5865F2</color> <!-- Discord blurple -->
+        <color name="primaryContainer">#B4AAFF</color>
+        <color name="onPrimary">#FFFFFF</color>
+
+        <color name="secondary">#7289DA</color>
+        <color name="secondaryContainer">#99AAB5</color>
+        <color name="onSecondary">#FFFFFF</color>
+
+        <!-- Dark background colors -->
+        <color name="background">#121212</color>
+        <color name="surface">#1E1E1E</color>
+        <color name="onSurface">#FFFFFF</color>
+
+        <!-- Error colors -->
+        <color name="error">#F04747</color>
+        <color name="onError">#FFFFFF</color>
+
+</resources>

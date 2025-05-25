@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme using Material3 DayNight with no ActionBar -->
+    <style name="Base.Theme.Synczone" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary color: Discord blurple -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryContainer">@color/primaryContainer</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <!-- Secondary color -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryContainer">@color/secondaryContainer</item>
+        <item name="colorOnSecondary">@color/onSecondary</item>
+        <!-- Background and Surface -->
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/onSurface</item>
+        <!-- Error colors -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/onError</item>
+        <!-- Customize other attributes as needed -->
+    </style>
+
+    <!-- Application theme -->
+    <style name="Theme.Synczone" parent="Base.Theme.Synczone" />
+</resources>

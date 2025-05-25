@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Synczone</string>
+    <string-array name="roles">
+        <item>Member</item>
+        <item>Mod</item>
+        <item>Admin</item>
+    </string-array>
+    <string-array name="channel_types">
+        <item>Text</item>
+        <item>Voice</item>
+    </string-array>
+</resources>

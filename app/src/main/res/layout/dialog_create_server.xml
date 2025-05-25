@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#1E1E1E">
+
+    <!-- Server Profile Image -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/serverProfileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_server"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Server Profile Image"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@android:color/white" />
+
+    <!-- Server Name Input -->
+    <EditText
+        android:id="@+id/etServerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Server Name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:background="@drawable/edittext_bg" />
+
+    <!-- Server Description Input -->
+    <EditText
+        android:id="@+id/etServerDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Server Description"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:minHeight="100dp"
+        android:gravity="top"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:background="@drawable/edittext_bg"
+        android:layout_marginTop="10dp" />
+
+    <!-- Progress Bar for Loading -->
+    <ProgressBar
+        android:id="@+id/progressBarCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

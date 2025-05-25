@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Gradient from a medium dark gray to a slightly darker shade -->
+    <gradient
+        android:startColor="#3A3A3A"
+        android:endColor="#1E1E1E"
+        android:angle="270" />
+    <!-- Rounded corners -->
+    <corners android:radius="8dp" />
+    <!-- Optional: Add some padding inside the drawable -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp" />
+</shape>

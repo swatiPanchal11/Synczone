@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "758088485611",
+    "firebase_url": "https://synczone-3dc68-default-rtdb.firebaseio.com",
+    "project_id": "synczone-3dc68",
+    "storage_bucket": "synczone-3dc68.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758088485611:android:50314486c7832b14868cae",
+        "android_client_info": {
+          "package_name": "com.example.synczone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC--RzhM0tPFA3dS0hiqOasFAOD2MaOQrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

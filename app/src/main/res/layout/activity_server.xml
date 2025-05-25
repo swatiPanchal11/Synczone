@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_app"
+    tools:context=".common.ServerActivity">
+
+    <!-- LEFT SIDEBAR: Channels List -->
+<LinearLayout
+android:id="@+id/leftSidebar"
+android:layout_width="250dp"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:paddingTop="16dp"
+android:paddingBottom="16dp"
+android:background="@drawable/left_sidebar_bg">
+
+<!-- Server Name Header -->
+<TextView
+    android:id="@+id/tvServerName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:text="Server Name"
+    android:textColor="#FFFFFF"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    android:background="@drawable/header_bg" />
+
+<!-- TEXT CHANNELS Label -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="TEXT CHANNELS"
+    android:padding="8dp"
+    android:textColor="#B0B0B0"
+    android:textSize="12sp"
+    android:textStyle="bold" />
+
+<!-- RecyclerView for Text Channels -->
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rvTextChannels"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    tools:ignore="SpeakableTextPresentCheck" />
+
+<!-- VOICE CHANNELS Label -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="VOICE CHANNELS"
+    android:padding="8dp"
+    android:textColor="#B0B0B0"
+    android:textSize="12sp"
+    android:textStyle="bold" />
+
+<!-- RecyclerView for Voice Channels -->
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rvVoiceChannels"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp" />
+
+<!-- Add Channel Button (for Admin/Mod) -->
+<ImageButton
+    android:id="@+id/btnAddChannel"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:src="@drawable/ic_add"
+    android:background="@drawable/round_button_bg"
+    android:contentDescription="Add Channel"
+    android:layout_gravity="center_horizontal"
+    android:visibility="gone"
+    app:tint="#FFFFFF" />
+</LinearLayout>
+
+    <!-- RIGHT AREA: Placeholder for Chat or Additional Content -->
+<FrameLayout
+    android:id="@+id/rightContainer"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_right_area">
+<!-- Later, embed your ServerChatActivity as a fragment if needed -->
+</FrameLayout>
+    </LinearLayout>
